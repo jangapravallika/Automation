@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="resources.Listenerclass"/>
+  </listeners>
+  <test thread-count="5" name="smoke(failed)" verbose="0">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Testcases.VerifyProduct">
+        <methods>
+          <include name="setreports"/>
+          <include name="availabilityofproduct" invocation-numbers="0"/>
+          <include name="later"/>
+          <include name="closur"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- Testcases.VerifyProduct -->
+      <class name="Testcases.Loginpagetest">
+        <methods>
+          <include name="setreports"/>
+          <include name="initialization"/>
+          <include name="loginpage" invocation-numbers="1"/>
+          <include name="closur"/>
+          <include name="later"/>
+        </methods>
+      </class> <!-- Testcases.Loginpagetest -->
+    </classes>
+  </test> <!-- smoke(failed) -->
+</suite> <!-- Failed suite [Suite] -->
