@@ -38,8 +38,10 @@ public class VerifyProduct extends Baseclass {
 		hp = l.loginclick(name,password,authentic);
 		log.info("search btn click ");
 		sp = hp.searchbtnclick("shoes");
+		log.info("product selected");
 		Boolean flag = sp.verifyproductavailability();
 		op = sp.selectproduct();
+		log.info("productverified");
 		Assert.assertTrue(flag);
 		log.endTestCase("availabilityofproduct");
 

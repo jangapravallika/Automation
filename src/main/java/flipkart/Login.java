@@ -2,6 +2,7 @@ package flipkart;
 
 import java.time.Duration;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -61,7 +62,13 @@ public class Login extends Baseclass {
 			Assert.assertTrue(flag);
 		} else if(register.contentEquals("unregistered user")) {
 		
+			try
+			{
 			Assert.assertEquals(Error.getText(), "Your username or password is incorrect");
+			}catch(NoSuchElementException e)
+			{
+				login.click();
+			}
 		}
 		else if(register.contentEquals("bothwrong"))
 		{

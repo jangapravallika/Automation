@@ -18,6 +18,16 @@ public class Dataprovider extends Baseclass {
 		return obj;
 	}
 	
+	@DataProvider(name="geturdata")
+	public  Object[][] geturdata()
+	{
+	
+		
+		return new Object[][] {
+            { "9959978789", "India@757","unregistered user" }
+           
+        };  
+	}
 	
 	
 	
@@ -32,7 +42,7 @@ public class Dataprovider extends Baseclass {
 		obj[0][1]="prava@56789";
 		obj[0][2]="registered user";
 		
-		obj[1][0]="8899967078";
+		obj[1][0]="7386765247";
 		obj[1][1]="rama@1234";
 		obj[1][2]="unregistered user";
 		
