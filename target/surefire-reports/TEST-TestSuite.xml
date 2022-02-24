@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="158.811" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="420.273" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.specification.version" value="11"/>
-    <property name="webdriver.chrome.driver" value="C:\Users\Public\Documents\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\Administrator\eclipse-workspace\flipkart\target\test-classes;C:\Users\Administrator\eclipse-workspace\flipkart\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.0\selenium-java-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.0\selenium-api-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.0\selenium-chrome-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.0\selenium-chromium-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.0\selenium-json-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.0\selenium-devtools-v85-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.0\selenium-devtools-v94-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.0\selenium-devtools-v95-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.0\selenium-devtools-v96-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.0\selenium-edge-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.0\selenium-firefox-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.0\selenium-firefox-xpi-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.0\selenium-ie-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.0\selenium-opera-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.0\selenium-remote-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.69.Final\netty-buffer-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.69.Final\netty-codec-http-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.69.Final\netty-codec-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.69.Final\netty-handler-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.69.Final\netty-common-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.69.Final\netty-transport-native-epoll-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.69.Final\netty-transport-native-kqueue-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.69.Final\netty-transport-native-unix-common-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.69.Final\netty-transport-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.69.Final\netty-resolver-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.0\opentelemetry-api-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.0\opentelemetry-context-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.0\opentelemetry-exporter-logging-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.0-alpha\opentelemetry-sdk-metrics-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.0-alpha\opentelemetry-sdk-logs-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.0\opentelemetry-sdk-common-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.0\opentelemetry-sdk-extension-autoconfigure-spi-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.0\opentelemetry-sdk-trace-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.0-alpha\opentelemetry-api-metrics-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.0\opentelemetry-sdk-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.0-alpha\opentelemetry-semconv-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.12.1\byte-buddy-1.12.1.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.0\selenium-http-4.1.0.jar;C:\Users\Administrator\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.0\selenium-safari-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.0\selenium-support-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Administrator\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
@@ -18,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.13\bin"/>
-    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire13843099211864857738\surefirebooter12605524101310828219.jar C:\Users\Administrator\AppData\Local\Temp\surefire13843099211864857738 2022-02-23T20-12-04_640-jvmRun1 surefire17954193331119179847tmp surefire_018360718833302634114tmp"/>
+    <property name="sun.java.command" value="C:\Users\Administrator\AppData\Local\Temp\surefire15208619908120816632\surefirebooter11771547925644564965.jar C:\Users\Administrator\AppData\Local\Temp\surefire15208619908120816632 2022-02-24T11-42-30_169-jvmRun1 surefire12663227188797735157tmp surefire_03340595282895325187tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Administrator\eclipse-workspace\flipkart\target\test-classes;C:\Users\Administrator\eclipse-workspace\flipkart\target\classes;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.1.0\selenium-java-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.1.0\selenium-api-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.1.0\selenium-chrome-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.0.1-jre\guava-31.0.1-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.7.1\error_prone_annotations-2.7.1.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.1.0\selenium-chromium-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.1.0\selenium-json-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.1.0\selenium-devtools-v85-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v94\4.1.0\selenium-devtools-v94-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v95\4.1.0\selenium-devtools-v95-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v96\4.1.0\selenium-devtools-v96-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.1.0\selenium-edge-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.1.0\selenium-firefox-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.1.0\selenium-firefox-xpi-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.1.0\selenium-ie-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.1.0\selenium-opera-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.1.0\selenium-remote-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.69.Final\netty-buffer-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.69.Final\netty-codec-http-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.69.Final\netty-codec-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.69.Final\netty-handler-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.69.Final\netty-common-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.69.Final\netty-transport-native-epoll-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.69.Final\netty-transport-native-kqueue-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.69.Final\netty-transport-native-unix-common-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.69.Final\netty-transport-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.69.Final\netty-resolver-4.1.69.Final.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.9.0\opentelemetry-api-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.9.0\opentelemetry-context-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.9.0\opentelemetry-exporter-logging-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.9.0-alpha\opentelemetry-sdk-metrics-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.9.0-alpha\opentelemetry-sdk-logs-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.0\jackson-databind-2.13.0.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.0\jackson-annotations-2.13.0.jar;C:\Users\Administrator\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.0\jackson-core-2.13.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.9.0\opentelemetry-sdk-common-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.9.0\opentelemetry-sdk-extension-autoconfigure-spi-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.9.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.9.0\opentelemetry-sdk-trace-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-metrics\1.9.0-alpha\opentelemetry-api-metrics-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.9.0\opentelemetry-sdk-1.9.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.9.0-alpha\opentelemetry-semconv-1.9.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.12.1\byte-buddy-1.12.1.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.1.0\selenium-http-4.1.0.jar;C:\Users\Administrator\.m2\repository\net\jodah\failsafe\2.4.4\failsafe-2.4.4.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.1.0\selenium-safari-driver-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.1.0\selenium-support-4.1.0.jar;C:\Users\Administrator\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Administrator\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\Administrator\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\Administrator\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\Administrator\.m2\repository\com\aventstack\extentreports\4.0.9\extentreports-4.0.9.jar;C:\Users\Administrator\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpclient\4.5.2\httpclient-4.5.2.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpcore\4.4.4\httpcore-4.4.4.jar;C:\Users\Administrator\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Administrator\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\Administrator\.m2\repository\org\apache\httpcomponents\httpmime\4.5.2\httpmime-4.5.2.jar;C:\Users\Administrator\.m2\repository\com\google\code\gson\gson\2.8.5\gson-2.8.5.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,15 +33,17 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire13843099211864857738\surefirebooter12605524101310828219.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Administrator\AppData\Local\Temp\surefire15208619908120816632\surefirebooter11771547925644564965.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.13+10-LTS-370"/>
+    <property name="webdriver.edge.driver" value="C:\Users\Public\Documents\msedgedriver.exe"/>
     <property name="user.name" value="Administrator"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="6.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="Cp1252"/>
+    <property name="browser" value="Microsoftedge"/>
     <property name="sun.nio.ch.bugLevel" value=""/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="java.vendor.version" value="18.9"/>
@@ -62,191 +63,200 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="product[9701763306, prava@56789, registered user](1)" classname="Testcases.Productavailability" time="22.989">
-    <system-out><![CDATA[2022-02-23 20:12:09 DEBUG InternalLoggerFactory:89 - Using Log4J as the default logging framework
-2022-02-23 20:12:09 DEBUG ResourceLeakDetector:129 - -Dio.netty.leakDetection.level: simple
-2022-02-23 20:12:09 DEBUG ResourceLeakDetector:130 - -Dio.netty.leakDetection.targetRecords: 4
-2022-02-23 20:12:09 DEBUG ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7f650fd4
-2022-02-23 20:12:09 DEBUG PlatformDependent0:460 - -Dio.netty.noUnsafe: false
-2022-02-23 20:12:09 DEBUG PlatformDependent0:954 - Java version: 11
-2022-02-23 20:12:09 DEBUG PlatformDependent0:135 - sun.misc.Unsafe.theUnsafe: available
-2022-02-23 20:12:09 DEBUG PlatformDependent0:159 - sun.misc.Unsafe.copyMemory: available
-2022-02-23 20:12:09 DEBUG PlatformDependent0:202 - java.nio.Buffer.address: available
-2022-02-23 20:12:09 DEBUG PlatformDependent0:285 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-2022-02-23 20:12:09 DEBUG PlatformDependent0:350 - java.nio.Bits.unaligned: available, true
-2022-02-23 20:12:09 DEBUG PlatformDependent0:417 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1e32d52a
-2022-02-23 20:12:09 DEBUG PlatformDependent0:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-2022-02-23 20:12:09 DEBUG PlatformDependent:1103 - sun.misc.Unsafe: available
-2022-02-23 20:12:09 DEBUG PlatformDependent:1205 - maxDirectMemory: 1065353216 bytes (maybe)
-2022-02-23 20:12:09 DEBUG PlatformDependent:1224 - -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)
-2022-02-23 20:12:09 DEBUG PlatformDependent:1303 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-2022-02-23 20:12:09 DEBUG PlatformDependent:1063 - Platform: Windows
-2022-02-23 20:12:09 DEBUG PlatformDependent:178 - -Dio.netty.maxDirectMemory: -1 bytes
-2022-02-23 20:12:09 DEBUG PlatformDependent:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-2022-02-23 20:12:09 DEBUG CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
-2022-02-23 20:12:09 DEBUG PlatformDependent:205 - -Dio.netty.noPreferDirect: false
-2022-02-23 20:12:09 DEBUG PlatformDependent:967 - org.jctools-core.MpscChunkedArrayQueue: available
-2022-02-23 20:12:09 DEBUG InternalThreadLocalMap:83 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-2022-02-23 20:12:09 DEBUG InternalThreadLocalMap:86 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-2022-02-23 20:12:10 DEBUG JdkSslContext:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-2022-02-23 20:12:10 DEBUG JdkSslContext:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-2022-02-23 20:12:10 DEBUG MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 4
-2022-02-23 20:12:10 DEBUG NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
-2022-02-23 20:12:10 DEBUG NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:155 - -Dio.netty.allocator.numHeapArenas: 4
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:156 - -Dio.netty.allocator.numDirectArenas: 4
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:158 - -Dio.netty.allocator.pageSize: 8192
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:163 - -Dio.netty.allocator.maxOrder: 11
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:167 - -Dio.netty.allocator.chunkSize: 16777216
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:168 - -Dio.netty.allocator.smallCacheSize: 256
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:169 - -Dio.netty.allocator.normalCacheSize: 64
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:170 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimInterval: 8192
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:172 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:173 - -Dio.netty.allocator.useCacheForAllThreads: true
-2022-02-23 20:12:10 DEBUG PooledByteBufAllocator:174 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-2022-02-23 20:12:10 DEBUG ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
-2022-02-23 20:12:10 DEBUG ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
-2022-02-23 20:12:10 DEBUG ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2022-02-23 20:12:12 DEBUG DefaultChannelId:79 - -Dio.netty.processId: 2536 (auto-detected)
-2022-02-23 20:12:12 DEBUG NetUtil:135 - -Djava.net.preferIPv4Stack: false
-2022-02-23 20:12:12 DEBUG NetUtil:136 - -Djava.net.preferIPv6Addresses: false
-2022-02-23 20:12:12 DEBUG NetUtilInitializations:129 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
-2022-02-23 20:12:12 DEBUG NetUtil:187 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-2022-02-23 20:12:12 DEBUG DefaultChannelId:101 - -Dio.netty.machineId: 0c:60:76:ff:fe:35:c6:45 (auto-detected)
-2022-02-23 20:12:12 DEBUG AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
-2022-02-23 20:12:12 DEBUG AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
-2022-02-23 20:12:12 DEBUG ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@71421584
-2022-02-23 20:12:12 DEBUG Recycler:103 - -Dio.netty.recycler.maxCapacityPerThread: 4096
-2022-02-23 20:12:12 DEBUG Recycler:104 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
-2022-02-23 20:12:12 DEBUG Recycler:105 - -Dio.netty.recycler.linkCapacity: 16
-2022-02-23 20:12:12 DEBUG Recycler:106 - -Dio.netty.recycler.ratio: 8
-2022-02-23 20:12:12 DEBUG Recycler:107 - -Dio.netty.recycler.delayedQueue.ratio: 8
-2022-02-23 20:12:14 DEBUG Brotli:38 - brotli4j not in the classpath; Brotli support will be unavailable.
-2022-02-23 20:12:15 DEBUG ThreadLocalRandom:214 - -Dio.netty.initialSeedUniquifier: 0x1d5b60d2e9a8a4f9
-2022-02-23 20:12:19 INFO  log:13 - =====================================end to end  TEST START=========================================
-2022-02-23 20:12:19 INFO  log:24 - userlogin
-2022-02-23 20:12:25 INFO  log:24 - search btn click 
-2022-02-23 20:12:32 INFO  log:24 - select size
-2022-02-23 20:12:32 INFO  log:24 - place order
-2022-02-23 20:12:33 INFO  log:24 - adress select
-2022-02-23 20:12:42 INFO  log:17 - =====================================end to end test case end TEST END=========================================
+  <testcase name="product[9701763306, prava@56789, registered user](1)" classname="Testcases.Productavailability" time="88.006">
+    <system-out><![CDATA[2022-02-24 11:42:34 DEBUG InternalLoggerFactory:89 - Using Log4J as the default logging framework
+2022-02-24 11:42:34 DEBUG ResourceLeakDetector:129 - -Dio.netty.leakDetection.level: simple
+2022-02-24 11:42:34 DEBUG ResourceLeakDetector:130 - -Dio.netty.leakDetection.targetRecords: 4
+2022-02-24 11:42:34 DEBUG ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@42556fe1
+2022-02-24 11:42:34 DEBUG PlatformDependent0:460 - -Dio.netty.noUnsafe: false
+2022-02-24 11:42:34 DEBUG PlatformDependent0:954 - Java version: 11
+2022-02-24 11:42:34 DEBUG PlatformDependent0:135 - sun.misc.Unsafe.theUnsafe: available
+2022-02-24 11:42:34 DEBUG PlatformDependent0:159 - sun.misc.Unsafe.copyMemory: available
+2022-02-24 11:42:34 DEBUG PlatformDependent0:202 - java.nio.Buffer.address: available
+2022-02-24 11:42:34 DEBUG PlatformDependent0:285 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+2022-02-24 11:42:34 DEBUG PlatformDependent0:350 - java.nio.Bits.unaligned: available, true
+2022-02-24 11:42:34 DEBUG PlatformDependent0:417 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$6 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @a678ffe
+2022-02-24 11:42:34 DEBUG PlatformDependent0:446 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+2022-02-24 11:42:34 DEBUG PlatformDependent:1103 - sun.misc.Unsafe: available
+2022-02-24 11:42:34 DEBUG PlatformDependent:1205 - maxDirectMemory: 1065353216 bytes (maybe)
+2022-02-24 11:42:34 DEBUG PlatformDependent:1224 - -Dio.netty.tmpdir: C:\Users\ADMINI~1\AppData\Local\Temp (java.io.tmpdir)
+2022-02-24 11:42:34 DEBUG PlatformDependent:1303 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2022-02-24 11:42:34 DEBUG PlatformDependent:1063 - Platform: Windows
+2022-02-24 11:42:34 DEBUG PlatformDependent:178 - -Dio.netty.maxDirectMemory: -1 bytes
+2022-02-24 11:42:34 DEBUG PlatformDependent:185 - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2022-02-24 11:42:34 DEBUG CleanerJava9:71 - java.nio.ByteBuffer.cleaner(): available
+2022-02-24 11:42:34 DEBUG PlatformDependent:205 - -Dio.netty.noPreferDirect: false
+2022-02-24 11:42:34 DEBUG PlatformDependent:967 - org.jctools-core.MpscChunkedArrayQueue: available
+2022-02-24 11:42:34 DEBUG InternalThreadLocalMap:83 - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2022-02-24 11:42:34 DEBUG InternalThreadLocalMap:86 - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2022-02-24 11:42:34 DEBUG JdkSslContext:97 - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+2022-02-24 11:42:34 DEBUG JdkSslContext:98 - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+2022-02-24 11:42:34 DEBUG MultithreadEventLoopGroup:44 - -Dio.netty.eventLoopThreads: 4
+2022-02-24 11:42:34 DEBUG NioEventLoop:106 - -Dio.netty.noKeySetOptimization: false
+2022-02-24 11:42:34 DEBUG NioEventLoop:107 - -Dio.netty.selectorAutoRebuildThreshold: 512
+2022-02-24 11:42:34 DEBUG PooledByteBufAllocator:155 - -Dio.netty.allocator.numHeapArenas: 4
+2022-02-24 11:42:34 DEBUG PooledByteBufAllocator:156 - -Dio.netty.allocator.numDirectArenas: 4
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:158 - -Dio.netty.allocator.pageSize: 8192
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:163 - -Dio.netty.allocator.maxOrder: 11
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:167 - -Dio.netty.allocator.chunkSize: 16777216
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:168 - -Dio.netty.allocator.smallCacheSize: 256
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:169 - -Dio.netty.allocator.normalCacheSize: 64
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:170 - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:171 - -Dio.netty.allocator.cacheTrimInterval: 8192
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:172 - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:173 - -Dio.netty.allocator.useCacheForAllThreads: true
+2022-02-24 11:42:35 DEBUG PooledByteBufAllocator:174 - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+2022-02-24 11:42:35 DEBUG ByteBufUtil:87 - -Dio.netty.allocator.type: pooled
+2022-02-24 11:42:35 DEBUG ByteBufUtil:96 - -Dio.netty.threadLocalDirectBufferSize: 0
+2022-02-24 11:42:35 DEBUG ByteBufUtil:99 - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2022-02-24 11:42:37 DEBUG DefaultChannelId:79 - -Dio.netty.processId: 4448 (auto-detected)
+2022-02-24 11:42:37 DEBUG NetUtil:135 - -Djava.net.preferIPv4Stack: false
+2022-02-24 11:42:37 DEBUG NetUtil:136 - -Djava.net.preferIPv6Addresses: false
+2022-02-24 11:42:38 DEBUG NetUtilInitializations:129 - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2022-02-24 11:42:38 DEBUG NetUtil:187 - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+2022-02-24 11:42:38 DEBUG DefaultChannelId:101 - -Dio.netty.machineId: 0c:60:76:ff:fe:35:c6:45 (auto-detected)
+2022-02-24 11:42:38 DEBUG AbstractByteBuf:63 - -Dio.netty.buffer.checkAccessible: true
+2022-02-24 11:42:38 DEBUG AbstractByteBuf:64 - -Dio.netty.buffer.checkBounds: true
+2022-02-24 11:42:38 DEBUG ResourceLeakDetectorFactory:196 - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@18f60c7b
+2022-02-24 11:42:38 DEBUG Recycler:103 - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2022-02-24 11:42:38 DEBUG Recycler:104 - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2022-02-24 11:42:38 DEBUG Recycler:105 - -Dio.netty.recycler.linkCapacity: 16
+2022-02-24 11:42:38 DEBUG Recycler:106 - -Dio.netty.recycler.ratio: 8
+2022-02-24 11:42:38 DEBUG Recycler:107 - -Dio.netty.recycler.delayedQueue.ratio: 8
+2022-02-24 11:42:49 DEBUG Brotli:38 - brotli4j not in the classpath; Brotli support will be unavailable.
+2022-02-24 11:42:50 DEBUG ThreadLocalRandom:214 - -Dio.netty.initialSeedUniquifier: 0xd8f323813d9f13f8
+2022-02-24 11:42:54 INFO  log:13 - =====================================end to end  TEST START=========================================
+2022-02-24 11:42:54 INFO  log:24 - userlogin
+2022-02-24 11:43:11 INFO  log:24 - search btn click 
+2022-02-24 11:43:43 INFO  log:24 - select size
+2022-02-24 11:44:03 INFO  log:24 - place order
+2022-02-24 11:44:04 INFO  log:24 - adress select
+2022-02-24 11:44:23 INFO  log:17 - =====================================end to end test case end TEST END=========================================
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 65052
+Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 57854
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:12:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683166.324][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:42:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:12:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:42:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:12:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:42:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="availabilityofproduct[9701763306, prava@56789, registered user](1)" classname="Testcases.VerifyProduct" time="15.55">
-    <system-out><![CDATA[2022-02-23 20:12:52 INFO  log:13 - =====================================availabilityofproductTest  TEST START=========================================
-2022-02-23 20:12:52 INFO  log:24 - userlogin
-2022-02-23 20:12:58 INFO  log:24 - search btn click 
-2022-02-23 20:13:07 INFO  log:17 - =====================================availabilityofproduct TEST END=========================================
+  <testcase name="availabilityofproduct[9701763306, prava@56789, registered user](1)" classname="Testcases.VerifyProduct" time="103.501">
+    <system-out><![CDATA[2022-02-24 11:44:40 INFO  log:13 - =====================================availabilityofproductTest  TEST START=========================================
+2022-02-24 11:44:40 INFO  log:24 - userlogin
+2022-02-24 11:44:48 INFO  log:24 - search btn click 
+2022-02-24 11:46:08 INFO  log:24 - product selected
+2022-02-24 11:46:24 INFO  log:24 - productverified
+2022-02-24 11:46:24 INFO  log:17 - =====================================availabilityofproduct TEST END=========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 65371
+    <system-err><![CDATA[Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 53931
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:12:48 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683270.710][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:44:32 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:12:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:44:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:12:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:44:33 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="verifyLogo[9701763306, prava@56789, registered user](1)" classname="Testcases.Demo" time="6.213">
-    <system-out><![CDATA[2022-02-23 20:13:20 INFO  log:13 - =====================================loginpage TEST START=========================================
-2022-02-23 20:13:20 INFO  log:24 - userlogin
-2022-02-23 20:13:26 INFO  log:17 - =====================================loginpage TEST END=========================================
+  <testcase name="verifyLogo[9701763306, prava@56789, registered user](1)" classname="Testcases.Demo" time="9.452">
+    <system-out><![CDATA[2022-02-24 11:46:44 INFO  log:13 - =====================================loginpage TEST START=========================================
+2022-02-24 11:46:44 INFO  log:24 - userlogin
+2022-02-24 11:46:51 INFO  log:17 - =====================================loginpage TEST END=========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 55493
+    <system-err><![CDATA[Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 51301
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:13:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683395.799][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:46:37 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:13:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:46:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:13:16 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:46:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="loginpage[9701763306, prava@56789, registered user](1)" classname="Testcases.Loginpagetest" time="5.999">
-    <system-out><![CDATA[2022-02-23 20:13:35 INFO  log:13 - =====================================loginpage TEST START=========================================
-2022-02-23 20:13:35 INFO  log:24 - userlogin
-2022-02-23 20:13:41 INFO  log:17 - =====================================loginpage TEST END=========================================
+  <testcase name="loginpage[9701763306, prava@56789, registered user](1)" classname="Testcases.Loginpagetest" time="7.224">
+    <system-out><![CDATA[2022-02-24 11:47:05 INFO  log:13 - =====================================loginpage TEST START=========================================
+2022-02-24 11:47:05 INFO  log:24 - userlogin
+2022-02-24 11:47:12 INFO  log:17 - =====================================loginpage TEST END=========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 62167
+    <system-err><![CDATA[Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 53788
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:13:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683418.867][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:46:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:13:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:47:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:13:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:47:00 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="loginpage[7386765247, rama@1234, unregistered user](2)" classname="Testcases.Loginpagetest" time="26.733">
-    <system-out><![CDATA[2022-02-23 20:13:49 INFO  log:13 - =====================================loginpage TEST START=========================================
-2022-02-23 20:13:49 INFO  log:24 - userlogin
-2022-02-23 20:14:16 INFO  log:17 - =====================================loginpage TEST END=========================================
+  <testcase name="loginpage[7386765247, rama@1234, unregistered user](2)" classname="Testcases.Loginpagetest" time="36.464">
+    <system-out><![CDATA[2022-02-24 11:47:51 INFO  log:13 - =====================================loginpage TEST START=========================================
+2022-02-24 11:47:51 INFO  log:24 - userlogin
+2022-02-24 11:48:27 INFO  log:17 - =====================================loginpage TEST END=========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 60186
+    <system-err><![CDATA[Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 60170
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:13:46 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683440.167][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:47:36 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:13:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:47:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:13:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:47:37 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="loginpage[kjlskjdljs, jshdjklsd, bothwrong](3)" classname="Testcases.Loginpagetest" time="6.08">
-    <system-out><![CDATA[2022-02-23 20:14:24 INFO  log:13 - =====================================loginpage TEST START=========================================
-2022-02-23 20:14:24 INFO  log:24 - userlogin
-2022-02-23 20:14:30 INFO  log:17 - =====================================loginpage TEST END=========================================
+  <testcase name="loginpage[kjlskjdljs, jshdjklsd, bothwrong](3)" classname="Testcases.Loginpagetest" time="5.976">
+    <system-out><![CDATA[2022-02-24 11:48:39 INFO  log:13 - =====================================loginpage TEST START=========================================
+2022-02-24 11:48:39 INFO  log:24 - userlogin
+2022-02-24 11:48:45 INFO  log:17 - =====================================loginpage TEST END=========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 50903
+    <system-err><![CDATA[Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 56306
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:14:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683513.784][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:48:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:14:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:48:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:14:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:48:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>
-  <testcase name="loginpage[ ,  , nill](4)" classname="Testcases.Loginpagetest" time="5.772">
-    <system-out><![CDATA[2022-02-23 20:14:37 INFO  log:13 - =====================================loginpage TEST START=========================================
-2022-02-23 20:14:37 INFO  log:24 - userlogin
-2022-02-23 20:14:43 INFO  log:17 - =====================================loginpage TEST END=========================================
+  <testcase name="loginpage[ ,  , nill](4)" classname="Testcases.Loginpagetest" time="15.661">
+    <system-out><![CDATA[2022-02-24 11:49:11 INFO  log:13 - =====================================loginpage TEST START=========================================
+2022-02-24 11:49:11 INFO  log:24 - userlogin
+2022-02-24 11:49:27 INFO  log:17 - =====================================loginpage TEST END=========================================
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 98.0.4758.80 (7f0488e8ba0d8e019187c6325a16c29d9b7f4989-refs/branch-heads/4758@{#972}) on port 56039
+    <system-err><![CDATA[Starting MSEdgeDriver 97.0.1072.69 (2e09adf9a2322c00eb55f4bf58341833b1c16627) on port 58716
 Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Feb 23, 2022 8:14:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
+MSEdgeDriver was started successfully.
+[1645683528.728][WARNING]: This version of MSEdgeDriver has not been tested with MSEdge version 98.
+Feb 24, 2022 11:48:53 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Feb 23, 2022 8:14:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:48:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 98, so returning the closest version found: 96
-Feb 23, 2022 8:14:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Feb 24, 2022 11:48:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 98 of 96
 ]]></system-err>
   </testcase>

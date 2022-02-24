@@ -9,6 +9,8 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -45,11 +47,22 @@ public class Baseclass {
 		FileInputStream fp=new FileInputStream(path);
 		prop=new Properties();
 		prop.load(fp);
-		String Browsername=prop.getProperty("browser");
-		if(Browsername.contains("Chrome"))
+		//String Browsername=prop.getProperty("browser");
+		String Browsername=System.getProperty("browser");
+		if(Browsername.equals("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Public\\Documents\\chromedriver.exe");
 			 driver=new ChromeDriver();
+		}else if(Browsername.equals("Firefox"))
+		{
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Public\\Documents\\geckodriver.exe");
+			driver = new FirefoxDriver();
+			
+		}else if(Browsername.equals("Microsoftedge"))
+		{
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\Public\\Documents\\msedgedriver.exe");
+			driver = new EdgeDriver();
+
 		}
 		prop.getProperty("url");
 		driver.manage().window().maximize();
