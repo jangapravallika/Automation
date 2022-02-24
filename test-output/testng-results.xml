@@ -2,25 +2,25 @@
 <testng-results ignored="6" total="13" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-23T20:08:49 IST" name="Suite" finished-at="2022-02-23T20:11:18 IST" duration-ms="148881">
+  <suite started-at="2022-02-24T14:00:18 IST" name="Suite" finished-at="2022-02-24T14:02:53 IST" duration-ms="155136">
     <groups>
       <group name="Regression">
-        <method signature="Loginpagetest.loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@957e06]" name="loginpage" class="Testcases.Loginpagetest"/>
-        <method signature="Productavailability.product(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Productavailability@17497425]" name="product" class="Testcases.Productavailability"/>
+        <method signature="Loginpagetest.loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@31fa1761]" name="loginpage" class="Testcases.Loginpagetest"/>
+        <method signature="Productavailability.product(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Productavailability@194bcebf]" name="product" class="Testcases.Productavailability"/>
       </group> <!-- Regression -->
       <group name="smoke">
-        <method signature="Demo.verifyLogo(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Demo@31fa1761]" name="verifyLogo" class="Testcases.Demo"/>
-        <method signature="Loginpagetest.loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@957e06]" name="loginpage" class="Testcases.Loginpagetest"/>
-        <method signature="VerifyProduct.availabilityofproduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.VerifyProduct@729d991e]" name="availabilityofproduct" class="Testcases.VerifyProduct"/>
+        <method signature="Demo.verifyLogo(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Demo@729d991e]" name="verifyLogo" class="Testcases.Demo"/>
+        <method signature="Loginpagetest.loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@31fa1761]" name="loginpage" class="Testcases.Loginpagetest"/>
+        <method signature="VerifyProduct.availabilityofproduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.VerifyProduct@1de5f259]" name="availabilityofproduct" class="Testcases.VerifyProduct"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2022-02-23T20:08:49 IST" name="Test" finished-at="2022-02-23T20:11:18 IST" duration-ms="148881">
+    <test started-at="2022-02-24T14:00:18 IST" name="Test" finished-at="2022-02-24T14:02:53 IST" duration-ms="155136">
       <class name="Testcases.VerifyProduct">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.VerifyProduct@729d991e]" started-at="2022-02-23T20:09:24 IST" name="initialization" finished-at="2022-02-23T20:09:31 IST" duration-ms="7549" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.VerifyProduct@1de5f259]" started-at="2022-02-24T14:00:53 IST" name="initialization" finished-at="2022-02-24T14:01:00 IST" duration-ms="6713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="availabilityofproduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.VerifyProduct@729d991e]" started-at="2022-02-23T20:09:31 IST" name="availabilityofproduct" data-provider="getrdata" finished-at="2022-02-23T20:09:42 IST" duration-ms="11148" status="PASS">
+        <test-method signature="availabilityofproduct(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.VerifyProduct@1de5f259]" started-at="2022-02-24T14:01:00 IST" name="availabilityofproduct" data-provider="getrdata" finished-at="2022-02-24T14:01:12 IST" duration-ms="12395" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,17 +41,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- availabilityofproduct -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.VerifyProduct@729d991e]" started-at="2022-02-23T20:09:42 IST" name="closur" finished-at="2022-02-23T20:09:43 IST" duration-ms="815" status="PASS">
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.VerifyProduct@1de5f259]" started-at="2022-02-24T14:01:12 IST" name="closur" finished-at="2022-02-24T14:01:13 IST" duration-ms="760" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closur -->
       </class> <!-- Testcases.VerifyProduct -->
       <class name="Testcases.Loginpagetest">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:09:57 IST" name="initialization" finished-at="2022-02-23T20:10:04 IST" duration-ms="6408" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:01:26 IST" name="initialization" finished-at="2022-02-24T14:01:32 IST" duration-ms="5698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:04 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-23T20:10:10 IST" duration-ms="6221" status="PASS">
+        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:01:32 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-24T14:01:37 IST" duration-ms="5735" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,15 +72,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:10 IST" name="closur" finished-at="2022-02-23T20:10:11 IST" duration-ms="873" status="PASS">
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:01:37 IST" name="closur" finished-at="2022-02-24T14:01:38 IST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closur -->
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:11 IST" name="initialization" finished-at="2022-02-23T20:10:18 IST" duration-ms="6958" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:01:38 IST" name="initialization" finished-at="2022-02-24T14:01:44 IST" duration-ms="6085" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:18 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-23T20:10:44 IST" duration-ms="26534" status="PASS">
+        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:01:44 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-24T14:02:13 IST" duration-ms="28447" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,15 +101,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:44 IST" name="closur" finished-at="2022-02-23T20:10:45 IST" duration-ms="771" status="PASS">
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:13 IST" name="closur" finished-at="2022-02-24T14:02:14 IST" duration-ms="878" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closur -->
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:45 IST" name="initialization" finished-at="2022-02-23T20:10:51 IST" duration-ms="6044" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:14 IST" name="initialization" finished-at="2022-02-24T14:02:35 IST" duration-ms="21209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:51 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-23T20:10:57 IST" duration-ms="6120" status="PASS">
+        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:35 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-24T14:02:41 IST" duration-ms="5886" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -130,15 +130,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:57 IST" name="closur" finished-at="2022-02-23T20:10:58 IST" duration-ms="747" status="PASS">
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:41 IST" name="closur" finished-at="2022-02-24T14:02:41 IST" duration-ms="668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closur -->
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:10:58 IST" name="initialization" finished-at="2022-02-23T20:11:11 IST" duration-ms="13267" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:41 IST" name="initialization" finished-at="2022-02-24T14:02:47 IST" duration-ms="5292" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:11:11 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-23T20:11:17 IST" duration-ms="5790" status="PASS">
+        <test-method signature="loginpage(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:47 IST" name="loginpage" data-provider="getdata" finished-at="2022-02-24T14:02:52 IST" duration-ms="5485" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -159,52 +159,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginpage -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@957e06]" started-at="2022-02-23T20:11:17 IST" name="closur" finished-at="2022-02-23T20:11:18 IST" duration-ms="747" status="PASS">
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Loginpagetest@31fa1761]" started-at="2022-02-24T14:02:52 IST" name="closur" finished-at="2022-02-24T14:02:53 IST" duration-ms="661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closur -->
       </class> <!-- Testcases.Loginpagetest -->
-      <class name="Testcases.Demo">
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Demo@31fa1761]" started-at="2022-02-23T20:09:43 IST" name="initialization" finished-at="2022-02-23T20:09:50 IST" duration-ms="6841" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialization -->
-        <test-method signature="verifyLogo(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Demo@31fa1761]" started-at="2022-02-23T20:09:50 IST" name="verifyLogo" data-provider="getrdata" finished-at="2022-02-23T20:09:56 IST" duration-ms="6295" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[9701763306]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[prava@56789]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[registered user]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogo -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Demo@31fa1761]" started-at="2022-02-23T20:09:56 IST" name="closur" finished-at="2022-02-23T20:09:57 IST" duration-ms="782" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closur -->
-      </class> <!-- Testcases.Demo -->
       <class name="Testcases.Productavailability">
-        <test-method is-config="true" signature="setreports()[pri:0, instance:Testcases.Productavailability@17497425]" started-at="2022-02-23T20:08:48 IST" name="setreports" finished-at="2022-02-23T20:08:49 IST" duration-ms="611" status="PASS">
+        <test-method is-config="true" signature="setreports()[pri:0, instance:Testcases.Productavailability@194bcebf]" started-at="2022-02-24T14:00:17 IST" name="setreports" finished-at="2022-02-24T14:00:18 IST" duration-ms="600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setreports -->
-        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Productavailability@17497425]" started-at="2022-02-23T20:08:49 IST" name="initialization" finished-at="2022-02-23T20:09:00 IST" duration-ms="10831" status="PASS">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Productavailability@194bcebf]" started-at="2022-02-24T14:00:18 IST" name="initialization" finished-at="2022-02-24T14:00:27 IST" duration-ms="9379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="product(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Productavailability@17497425]" started-at="2022-02-23T20:09:00 IST" name="product" data-provider="getrdata" finished-at="2022-02-23T20:09:23 IST" duration-ms="23117" status="PASS">
+        <test-method signature="product(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Productavailability@194bcebf]" started-at="2022-02-24T14:00:27 IST" name="product" data-provider="getrdata" finished-at="2022-02-24T14:00:52 IST" duration-ms="25379" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -225,15 +194,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product -->
-        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Productavailability@17497425]" started-at="2022-02-23T20:09:23 IST" name="closur" finished-at="2022-02-23T20:09:24 IST" duration-ms="876" status="PASS">
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Productavailability@194bcebf]" started-at="2022-02-24T14:00:52 IST" name="closur" finished-at="2022-02-24T14:00:53 IST" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closur -->
-        <test-method is-config="true" signature="later()[pri:0, instance:Testcases.Productavailability@17497425]" started-at="2022-02-23T20:11:18 IST" name="later" finished-at="2022-02-23T20:11:19 IST" duration-ms="1107" status="PASS">
+        <test-method is-config="true" signature="later()[pri:0, instance:Testcases.Productavailability@194bcebf]" started-at="2022-02-24T14:02:53 IST" name="later" finished-at="2022-02-24T14:02:54 IST" duration-ms="1221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- later -->
       </class> <!-- Testcases.Productavailability -->
+      <class name="Testcases.Demo">
+        <test-method is-config="true" signature="initialization()[pri:0, instance:Testcases.Demo@729d991e]" started-at="2022-02-24T14:01:13 IST" name="initialization" finished-at="2022-02-24T14:01:19 IST" duration-ms="6093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verifyLogo(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Testcases.Demo@729d991e]" started-at="2022-02-24T14:01:19 IST" name="verifyLogo" data-provider="getrdata" finished-at="2022-02-24T14:01:25 IST" duration-ms="6088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9701763306]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[prava@56789]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[registered user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogo -->
+        <test-method is-config="true" signature="closur()[pri:0, instance:Testcases.Demo@729d991e]" started-at="2022-02-24T14:01:25 IST" name="closur" finished-at="2022-02-24T14:01:26 IST" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closur -->
+      </class> <!-- Testcases.Demo -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

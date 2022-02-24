@@ -11,7 +11,7 @@ public class Addresscheckoutpage extends Baseclass{
 	}
 
 
-	@FindBy(xpath="//button[text()=\"Deliver Here\"]")
+	@FindBy(xpath="//button[text()='Deliver Here']")
 	WebElement address;
 	
 	
@@ -19,7 +19,9 @@ public class Addresscheckoutpage extends Baseclass{
 	public Summarypage selectaddress() throws InterruptedException
 	{
 		address.click();
-		Thread.sleep(3000);
+			Thread.sleep(3000);
+			
+		
 		
 		return new Summarypage();
 	}

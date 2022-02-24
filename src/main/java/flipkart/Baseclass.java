@@ -9,6 +9,7 @@ import org.apache.log4j.xml.DOMConfigurator;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterSuite;
@@ -49,10 +50,18 @@ public class Baseclass {
 		prop.load(fp);
 		//String Browsername=prop.getProperty("browser");
 		String Browsername=System.getProperty("browser");
-		if(Browsername.equals("Chrome"))
+		if(Browsername.contains("Chrome"))
 		{
+			ChromeOptions options=new ChromeOptions();
+			
+			if(Browsername.contains("headless"))
+			{
+				options.addArguments("--headless");
+			}
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Public\\Documents\\chromedriver.exe");
-			 driver=new ChromeDriver();
+			
+			options.addArguments("window-size=1920,1080");
+			 driver=new ChromeDriver(options);
 		}else if(Browsername.equals("Firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Public\\Documents\\geckodriver.exe");
