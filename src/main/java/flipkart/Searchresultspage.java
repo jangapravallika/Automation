@@ -1,17 +1,22 @@
 package flipkart;
 
+import java.time.Duration;
+
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import resources.Actionsclass;
 
 public class Searchresultspage extends Baseclass {
+	
 
 	public Searchresultspage() {
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getdriver(), this);
 	}
 
 	@FindBy(css="a[title='Running Shoes For Men']")
@@ -31,31 +36,24 @@ public class Searchresultspage extends Baseclass {
 		 flag=shproduct.isDisplayed();
 		}catch(NoSuchElementException e)
 		{
-			performactions(driver);
+			performactions(getdriver());
 		}
 		return flag;
 
 	}
 	public Orderpage selectproduct() throws InterruptedException {
 		shproduct.click();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Actionsclass a=new Actionsclass();
 		String cw=a.window();
-		driver.switchTo().window(cw);
+		getdriver().switchTo().window(cw);
+		/*
+		 * WebDriverWait wait=new WebDriverWait(getdriver(),Duration.ofSeconds(5));
+		 * wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(null))
+		 */
 		return new Orderpage();
 	}
-	public Orderpage product() throws InterruptedException {
-		try
-		{
-		Thread.sleep(5000);
-		product.click();
-		}catch(NoSuchElementException e)
-		{
-			performactions(driver);
-		}
-		
-		return new Orderpage();
-	}
+	
 
 	private void performactions(WebDriver driver) {
 		// TODO Auto-generated method stub

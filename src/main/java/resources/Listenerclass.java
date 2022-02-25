@@ -20,6 +20,7 @@ import flipkart.Baseclass;
 
 public class Listenerclass extends ExtentManager  implements ITestListener {
 
+	Baseclass be=new Baseclass();
 	Actionsclass action=new Actionsclass();
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getName());
@@ -38,7 +39,7 @@ public class Listenerclass extends ExtentManager  implements ITestListener {
 						MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 				test.log(Status.FAIL,
 						MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
-				String imgPath = action.screenShot(Baseclass.getDriver(), result.getName());
+				String imgPath = action.screenShot(Baseclass.getdriver(), result.getName());
 			
 				test.fail("ScreenShot is Attached", MediaEntityBuilder.createScreenCaptureFromPath(imgPath).build());
 				

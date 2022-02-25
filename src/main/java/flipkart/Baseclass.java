@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -28,20 +29,19 @@ public class Baseclass {
 
 
 	public Properties prop;
-	public static WebDriver driver;
 	
-	
+	public static ThreadLocal<RemoteWebDriver> driver=new ThreadLocal<RemoteWebDriver>();
 	@BeforeSuite(groups={"Regression","smoke"})
 	public void setreports()
 	{
 		DOMConfigurator.configure("log4j2.xml");
 		ExtentManager.setExtent();
 	}
-	public static WebDriver getDriver() {
-		// Get Driver from threadLocalmap
-		return driver;
-	}
 	
+	public static  WebDriver getdriver() {
+		// Get Driver from threadLocalmap
+		return driver.get();
+	}
 	public void launch() throws IOException
 	{
 		String path=System.getProperty("user.dir")+"\\src\\main\\resources\\flipkart\\config.properties";		
@@ -61,24 +61,26 @@ public class Baseclass {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Public\\Documents\\chromedriver.exe");
 			
 			options.addArguments("window-size=1920,1080");
-			 driver=new ChromeDriver(options);
+			 driver.set(new ChromeDriver(options));
 		}else if(Browsername.equals("Firefox"))
 		{
 			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Public\\Documents\\geckodriver.exe");
-			driver = new FirefoxDriver();
+			driver.set(new FirefoxDriver());
 			
 		}else if(Browsername.equals("Microsoftedge"))
 		{
 			System.setProperty("webdriver.edge.driver", "C:\\Users\\Public\\Documents\\msedgedriver.exe");
-			driver = new EdgeDriver();
+			driver.set( new EdgeDriver());
 
 		}
 		prop.getProperty("url");
-		driver.manage().window().maximize();
-		driver.get(prop.getProperty("url"));
+		getdriver().manage().window().maximize();
+		getdriver().get(prop.getProperty("url"));
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		getdriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 	}
+	
 	
 	@AfterSuite(groups={"Regression","smoke"})
 	public void later()

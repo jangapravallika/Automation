@@ -2,6 +2,7 @@ package Testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -21,6 +22,7 @@ import resources.Dataprovider;
 
 public class VerifyProduct extends Baseclass {
 
+	
 	public Homepage hp;
 	public Searchresultspage sp;
 	public Orderpage op;
@@ -49,7 +51,7 @@ public class VerifyProduct extends Baseclass {
 
 	@AfterMethod(groups={"Regression","smoke"})
 	public void closur() {
-		driver.quit();
+		getdriver().quit();
 	}
 
 }

@@ -2,6 +2,7 @@ package Testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,7 +15,8 @@ import flipkart.Login;
 import resources.Dataprovider;
 
 public class Demo extends Baseclass {
-	public Login l;
+	
+
 	public Homepage hp;
 	
 	@BeforeMethod(groups={"Regression","smoke"})
@@ -28,7 +30,7 @@ public class Demo extends Baseclass {
 		
 		log.startTestCase("loginpage");
 		log.info("userlogin");
-		l = new Login();
+		 Login l=new Login();
 		hp=l.loginclick(name, password,authentication);
 		log.endTestCase("loginpage");
 		boolean flag=hp.verifylogo();
@@ -38,7 +40,7 @@ public class Demo extends Baseclass {
 
 	@AfterMethod(groups={"Regression","smoke"})
 	public void closur() {
-		driver.quit();
+		getdriver().quit();
 	}
 
 	

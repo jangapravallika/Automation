@@ -2,6 +2,7 @@ package Testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -18,7 +19,8 @@ import flipkart.Login;
 import resources.Dataprovider;
 
 public class Loginpagetest extends Baseclass {
-	public Login l;
+	
+	
 	public Homepage hp;
 
 	@BeforeMethod(groups={"Regression","smoke"})
@@ -30,14 +32,14 @@ public class Loginpagetest extends Baseclass {
 	public void loginpage(String name,String password,String authentication) throws InterruptedException {
 		log.startTestCase("loginpage");
 		log.info("userlogin");
-		l = new Login();
+		 Login l = new Login();
 		hp=l.loginclick(name, password,authentication);
 		log.endTestCase("loginpage");
 	}
 
 	@AfterMethod(groups={"Regression","smoke"})
 	public void closur() {
-		driver.quit();
+		getdriver().quit();
 	}
 
 }

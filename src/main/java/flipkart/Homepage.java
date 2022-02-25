@@ -8,13 +8,14 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Homepage extends Baseclass{
 
+;
 	/*
 	 * public WebDriver driver; public Homepage(WebDriver driver) {
 	 * this.driver=driver; }
 	 */
 	public Homepage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getdriver(), this);
 	}
 	
 	@FindBy(css="div[class='_3qX0zy']")
@@ -23,20 +24,21 @@ public class Homepage extends Baseclass{
 	@FindBy(name="q")
 	WebElement search;
 	
-	@FindBy(xpath="//button[@class=\"L0Z3Pu\"]")
+	@FindBy(xpath="//button[@class='L0Z3Pu']")
 	WebElement searchbtn;
 	public WebElement textbo() {
 		return search;
 	}
-	public Searchresultspage searchbtnclick(String item)
+	public Searchresultspage searchbtnclick(String item) throws InterruptedException
 	{
 		try {
 		search.sendKeys(item);
 		searchbtn.click();
+		Thread.sleep(3000);
 		
 		}catch(StaleElementReferenceException e)
 		{
-			performactions(driver);
+			performactions(getdriver());
 		}
 		return new Searchresultspage();
 	}

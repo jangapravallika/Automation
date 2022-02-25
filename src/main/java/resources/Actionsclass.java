@@ -19,7 +19,7 @@ public class Actionsclass extends Baseclass {
 	
 	public String screenShot(WebDriver driver, String filename) {
 		String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		TakesScreenshot takesScreenshot = (TakesScreenshot) getdriver();
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
 		String destination = System.getProperty("user.dir") + "\\ScreenShots\\" + filename + "_" + dateName + ".png";
 
@@ -38,7 +38,7 @@ public class Actionsclass extends Baseclass {
 	
 	public String window()
 	{
-		Set<String> w=driver.getWindowHandles();
+		Set<String> w=getdriver().getWindowHandles();
 		Iterator<String>i=w.iterator();
 		String parentwindow=i.next();
 		String childwindow=i.next();

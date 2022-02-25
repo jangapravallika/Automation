@@ -11,10 +11,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Orderpage extends Baseclass{
+	
 
 	public Orderpage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getdriver(), this);
 	}
 
 	
@@ -32,7 +33,7 @@ public class Orderpage extends Baseclass{
 		size.click();
 		}catch(StaleElementReferenceException e)
 		{
-			performactions(driver);
+			performactions(getdriver());
 		}
 	}
 	
@@ -43,9 +44,10 @@ public class Orderpage extends Baseclass{
 
 	public Addresscheckoutpage orderclick() throws InterruptedException
 	{
-		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
+		WebDriverWait wait=new WebDriverWait(getdriver(),Duration.ofSeconds(10));
 				wait.until(ExpectedConditions.elementToBeClickable(order));
 		order.click();
+		Thread.sleep(2000);
 		return new Addresscheckoutpage();
 	}
 }

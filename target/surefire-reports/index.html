@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testcases.VerifyProduct" class="method navigator-link" hash-for-method="availabilityofproduct(9701763306, prava@56789, registered user)">availabilityofproduct(9701763306, prava@56789, registered user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Testcases.Productavailability" class="method navigator-link" hash-for-method="product(9701763306, prava@56789, registered user)">product(9701763306, prava@56789, registered user)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +123,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.VerifyProduct" class="method navigator-link" hash-for-method="availabilityofproduct(9701763306, prava@56789, registered user)">availabilityofproduct(9701763306, prava@56789, registered user)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="Testcases.Loginpagetest" class="method navigator-link" hash-for-method="loginpage(9701763306, prava@56789, registered user)">loginpage(9701763306, prava@56789, registered user)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -119,17 +138,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.Loginpagetest" class="method navigator-link" hash-for-method="loginpage(9701763306, prava@56789, registered user)">loginpage(9701763306, prava@56789, registered user)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Testcases.Loginpagetest" class="method navigator-link" hash-for-method="loginpage(kjlskjdljs, jshdjklsd, bothwrong)">loginpage(kjlskjdljs, jshdjklsd, bothwrong)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Testcases.Productavailability" class="method navigator-link" hash-for-method="product(9701763306, prava@56789, registered user)">product(9701763306, prava@56789, registered user)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -149,25 +158,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Testcases.Productavailability</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="product(9701763306, prava@56789, registered user)">
-                  </a> <!-- product(9701763306, prava@56789, registered user) -->
-                  <span class="method-name">product</span>
-                  <span class="parameters">(9701763306, prava@56789, registered user)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">Testcases.VerifyProduct</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -177,6 +170,122 @@
                   </a> <!-- availabilityofproduct(9701763306, prava@56789, registered user) -->
                   <span class="method-name">availabilityofproduct</span>
                   <span class="parameters">(9701763306, prava@56789, registered user)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;MIKE PRO Running Shoes For Men&apos;]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;SIS-PC&apos;, ip: &apos;192.168.29.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1530b51748838c0e984543c75bdc2c4d, findElement {using=css selector, value=a[title=&apos;MIKE PRO Running Shoes For Men&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59263}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59263/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1530b51748838c0e984543c75bdc2c4d
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at flipkart.Searchresultspage.selectproduct(Searchresultspage.java:45)
+	at Testcases.VerifyProduct.availabilityofproduct(VerifyProduct.java:45)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Testcases.Productavailability</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="product(9701763306, prava@56789, registered user)">
+                  </a> <!-- product(9701763306, prava@56789, registered user) -->
+                  <span class="method-name">product</span>
+                  <span class="parameters">(9701763306, prava@56789, registered user)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;a[title=&apos;MIKE PRO Running Shoes For Men&apos;]&quot;}
+  (Session info: chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;SIS-PC&apos;, ip: &apos;192.168.29.16&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;11.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d1308b0407db316157f50e790dc0ae2e, findElement {using=css selector, value=a[title=&apos;MIKE PRO Running Shoes For Men&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: C:\Users\ADMINI~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59264}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59264/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d1308b0407db316157f50e790dc0ae2e
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy17.click(Unknown Source)
+	at flipkart.Searchresultspage.selectproduct(Searchresultspage.java:45)
+	at Testcases.Productavailability.product(Productavailability.java:52)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Testcases.Loginpagetest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginpage(9701763306, prava@56789, registered user)">
+                  </a> <!-- loginpage(9701763306, prava@56789, registered user) -->
+                  <span class="method-name">loginpage</span>
+                  <span class="parameters">(9701763306, prava@56789, registered user)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginpage( ,  , nill)">
+                  </a> <!-- loginpage( ,  , nill) -->
+                  <span class="method-name">loginpage</span>
+                  <span class="parameters">( ,  , nill)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginpage(7386765247, rama@1234, unregistered user)">
+                  </a> <!-- loginpage(7386765247, rama@1234, unregistered user) -->
+                  <span class="method-name">loginpage</span>
+                  <span class="parameters">(7386765247, rama@1234, unregistered user)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginpage(kjlskjdljs, jshdjklsd, bothwrong)">
+                  </a> <!-- loginpage(kjlskjdljs, jshdjklsd, bothwrong) -->
+                  <span class="method-name">loginpage</span>
+                  <span class="parameters">(kjlskjdljs, jshdjklsd, bothwrong)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -197,46 +306,6 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Testcases.Loginpagetest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginpage( ,  , nill)">
-                  </a> <!-- loginpage( ,  , nill) -->
-                  <span class="method-name">loginpage</span>
-                  <span class="parameters">( ,  , nill)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginpage(7386765247, rama@1234, unregistered user)">
-                  </a> <!-- loginpage(7386765247, rama@1234, unregistered user) -->
-                  <span class="method-name">loginpage</span>
-                  <span class="parameters">(7386765247, rama@1234, unregistered user)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginpage(9701763306, prava@56789, registered user)">
-                  </a> <!-- loginpage(9701763306, prava@56789, registered user) -->
-                  <span class="method-name">loginpage</span>
-                  <span class="parameters">(9701763306, prava@56789, registered user)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginpage(kjlskjdljs, jshdjklsd, bothwrong)">
-                  </a> <!-- loginpage(kjlskjdljs, jshdjklsd, bothwrong) -->
-                  <span class="method-name">loginpage</span>
-                  <span class="parameters">(kjlskjdljs, jshdjklsd, bothwrong)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -246,11 +315,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;8&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;resources.Listenerclass&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Testcases.Productavailability&quot;/&gt;
       &lt;class name=&quot;Testcases.VerifyProduct&quot;/&gt;
@@ -325,38 +394,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginpage')
-data.setCell(0, 2, 'Testcases.Loginpagetest')
-data.setCell(0, 3, 26792);
+data.setCell(0, 1, 'availabilityofproduct')
+data.setCell(0, 2, 'Testcases.VerifyProduct')
+data.setCell(0, 3, 61986);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'product')
 data.setCell(1, 2, 'Testcases.Productavailability')
-data.setCell(1, 3, 21414);
+data.setCell(1, 3, 44738);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'availabilityofproduct')
-data.setCell(2, 2, 'Testcases.VerifyProduct')
-data.setCell(2, 3, 14318);
+data.setCell(2, 1, 'loginpage')
+data.setCell(2, 2, 'Testcases.Loginpagetest')
+data.setCell(2, 3, 27705);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verifyLogo')
 data.setCell(3, 2, 'Testcases.Demo')
-data.setCell(3, 3, 6457);
+data.setCell(3, 3, 7682);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'loginpage')
 data.setCell(4, 2, 'Testcases.Loginpagetest')
-data.setCell(4, 3, 6053);
+data.setCell(4, 3, 5459);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'loginpage')
 data.setCell(5, 2, 'Testcases.Loginpagetest')
-data.setCell(5, 3, 5879);
+data.setCell(5, 3, 4462);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'loginpage')
 data.setCell(6, 2, 'Testcases.Loginpagetest')
-data.setCell(6, 3, 5657);
+data.setCell(6, 3, 4184);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -375,7 +444,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Testcases.VerifyProduct</span>
+              <span class="ignored-class-name">Testcases.Loginpagetest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setreports</span>
                 <br/>
@@ -393,7 +462,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">Testcases.Loginpagetest</span>
+              <span class="ignored-class-name">Testcases.VerifyProduct</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setreports</span>
                 <br/>
@@ -414,105 +483,127 @@ return data;
                 <span class="method-name">setreports</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-method before">
-                <span class="method-name">initialization</span>
-                <span class="method-start">532 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">product(9701763306, prava@56789, registered user)</span>
-                <span class="method-start">10135 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closur</span>
-                <span class="method-start">31569 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.VerifyProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">32511 ms</span>
+                <span class="method-start">755 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testcases.Productavailability</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">755 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testcases.VerifyProduct</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">availabilityofproduct(9701763306, prava@56789, registered user)</span>
-                <span class="method-start">38869 ms</span>
+                <span class="method-start">25598 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testcases.Productavailability</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">product(9701763306, prava@56789, registered user)</span>
+                <span class="method-start">26852 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closur</span>
-                <span class="method-start">53188 ms</span>
+                <span class="method-start">72327 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.Demo</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">54107 ms</span>
+                <span class="method-start">73598 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLogo(9701763306, prava@56789, registered user)</span>
-                <span class="method-start">60368 ms</span>
+                <span class="method-start">82802 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testcases.VerifyProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">closur</span>
-                <span class="method-start">66826 ms</span>
+                <span class="method-start">89031 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.Loginpagetest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">68162 ms</span>
+                <span class="method-start">90421 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testcases.Demo</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">closur</span>
+                <span class="method-start">90489 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Testcases.Loginpagetest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">loginpage(9701763306, prava@56789, registered user)</span>
-                <span class="method-start">75617 ms</span>
+                <span class="method-start">98786 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closur</span>
-                <span class="method-start">81671 ms</span>
+                <span class="method-start">104246 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">82509 ms</span>
+                <span class="method-start">105627 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginpage(7386765247, rama@1234, unregistered user)</span>
-                <span class="method-start">89270 ms</span>
+                <span class="method-start">114393 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closur</span>
-                <span class="method-start">116063 ms</span>
+                <span class="method-start">142100 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">116888 ms</span>
+                <span class="method-start">143100 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginpage(kjlskjdljs, jshdjklsd, bothwrong)</span>
-                <span class="method-start">124069 ms</span>
+                <span class="method-start">152587 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closur</span>
-                <span class="method-start">129949 ms</span>
+                <span class="method-start">157050 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">initialization</span>
-                <span class="method-start">130754 ms</span>
+                <span class="method-start">158003 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginpage( ,  , nill)</span>
-                <span class="method-start">147932 ms</span>
+                <span class="method-start">166920 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closur</span>
-                <span class="method-start">153590 ms</span>
+                <span class="method-start">171105 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Testcases.Productavailability</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">later</span>
-                <span class="method-start">154473 ms</span>
+                <span class="method-start">172121 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

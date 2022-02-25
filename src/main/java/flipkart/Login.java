@@ -13,22 +13,24 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class Login extends Baseclass {
+	
 	Homepage home = new Homepage();
 
 	public Login() {
-
-		PageFactory.initElements(driver, this);
+      
+		PageFactory.initElements(getdriver(), this);
 	}
+	
 	@FindBy(xpath="//span[text()='Please enter Password']")
 	WebElement errorpwd;
 
-	@FindBy(css = "input[class=\"_2IX_2- VJZDxU\"]")
+	@FindBy(css = "input[class='_2IX_2- VJZDxU']")
 	WebElement username;
 
-	@FindBy(css = "input[type=\"password\"]")
+	@FindBy(css = "input[type='password']")
 	WebElement password;
 
-	@FindBy(xpath = "//button[@type=\"submit\"]//span")
+	@FindBy(xpath = "//button[@type='submit']//span")
 	WebElement login;
 
 	@FindBy(xpath = "//span[text()='Your username or password is incorrect']")
@@ -53,9 +55,10 @@ public class Login extends Baseclass {
 		try
 		{
 		login.click();
+		Thread.sleep(3000);
 		}catch(StaleElementReferenceException e)
 		{
-			performactions(driver);
+			performactions(getdriver());
 		}
 		if (register.contentEquals("registered user")) {
 			flag = home.textbo().isDisplayed();
@@ -68,6 +71,7 @@ public class Login extends Baseclass {
 			}catch(NoSuchElementException e)
 			{
 				login.click();
+				Thread.sleep(3000);
 			}
 		}
 		else if(register.contentEquals("bothwrong"))
@@ -80,7 +84,7 @@ public class Login extends Baseclass {
 		{
 			Assert.assertEquals(errorpwd.getText(), "Please enter Password");
 		}
-		Thread.sleep(5000);
+		//Thread.sleep(1000);
 		return new Homepage();
 
 	}

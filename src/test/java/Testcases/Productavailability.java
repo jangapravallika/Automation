@@ -2,6 +2,7 @@ package Testcases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
@@ -34,7 +35,7 @@ public class Productavailability extends Baseclass {
 	@BeforeMethod(groups={"Regression","smoke"})
 	public void initialization() throws IOException 
 	{
-		launch();
+	launch();
 	}
 	
 //@Parameters({"product"})
@@ -65,6 +66,6 @@ public class Productavailability extends Baseclass {
 	@AfterMethod(groups={"Regression","smoke"})
 	public void closur() 
 	{
-		driver.quit();
+		getdriver().quit();
 	}
 }
